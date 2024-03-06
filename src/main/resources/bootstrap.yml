@@ -1,0 +1,10 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: api-gateway-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://localhost:${EUREKA_PORT:8761}/eureka}
+    register-with-eureka: true
